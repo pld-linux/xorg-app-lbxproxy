@@ -1,4 +1,4 @@
-# $Rev: 3352 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3352 $, $Date: 2005-08-27 17:42:47 $
 #
 Summary:	lbxproxy application
 Summary(pl):	Aplikacja lbxproxy
@@ -19,7 +19,7 @@ BuildRequires:	xorg-lib-libICE-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-liblbxutil-devel
 BuildRequires:	xorg-util-util-macros
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-proto-xproxymanagementprotocol-devel
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRoot:	%{tmpdir}/lbxproxy-%{version}-root-%(id -u -n)
