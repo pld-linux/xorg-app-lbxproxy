@@ -12,14 +12,14 @@ Patch1:		lbxproxy-freebsd.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-proto-bigreqsproto-devel
+BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-lib-libICE-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-liblbxutil-devel
-BuildRequires:	xorg-util-util-macros
-BuildRequires:	pkgconfig >= 0.19
-BuildRequires:	xorg-proto-xproxymanagementprotocol-devel
 BuildRequires:	xorg-lib-xtrans-devel
+BuildRequires:	xorg-proto-bigreqsproto-devel
+BuildRequires:	xorg-proto-xproxymanagementprotocol-devel
+BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
