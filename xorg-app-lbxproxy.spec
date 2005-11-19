@@ -1,12 +1,12 @@
 Summary:	lbxproxy application
 Summary(pl):	Aplikacja lbxproxy
 Name:		xorg-app-lbxproxy
-Version:	0.99.1
+Version:	0.99.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/lbxproxy-%{version}.tar.bz2
-# Source0-md5:	70127eb7aeac79b32e0e7f9326566ed9
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/app/lbxproxy-%{version}.tar.bz2
+# Source0-md5:	814af8f7b0bbe72e482889448a8a3c95
 Patch0:		xorg-lbxproxy-freebsd.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
@@ -16,7 +16,6 @@ BuildRequires:	xorg-lib-libICE-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-liblbxutil-devel
 BuildRequires:	xorg-lib-xtrans-devel
-# for <X11/extensions/bigreqstr.h>
 BuildRequires:	xorg-proto-bigreqsproto-devel
 BuildRequires:	xorg-proto-xproxymanagementprotocol-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.1
