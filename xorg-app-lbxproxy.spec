@@ -1,5 +1,5 @@
 Summary:	lbxproxy application
-Summary(pl):	Aplikacja lbxproxy
+Summary(pl.UTF-8):   Aplikacja lbxproxy
 Name:		xorg-app-lbxproxy
 Version:	1.0.1
 Release:	1
@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 lbxproxy application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja lbxproxy.
 
 %prep
