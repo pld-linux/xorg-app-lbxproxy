@@ -1,5 +1,5 @@
 Summary:	lbxproxy application
-Summary(pl.UTF-8):   Aplikacja lbxproxy
+Summary(pl.UTF-8):	Aplikacja lbxproxy
 Name:		xorg-app-lbxproxy
 Version:	1.0.1
 Release:	1
