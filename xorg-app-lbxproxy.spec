@@ -1,5 +1,5 @@
-Summary:	lbxproxy application
-Summary(pl.UTF-8):	Aplikacja lbxproxy
+Summary:	lbxproxy application - Low Bandwidth X proxy
+Summary(pl.UTF-8):	Aplikacja lbxproxy - proxy X dla sieci o niskiej przepustowości
 Name:		xorg-app-lbxproxy
 Version:	1.0.1
 Release:	1
@@ -25,10 +25,23 @@ BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-lbxproxy application.
+Applications that would like to take advantage of the Low Bandwidth
+extension to X (LBX) must make their connections to an lbxproxy. These
+applications need to know nothing about LBX, they simply connect to
+the lbxproxy as if were a regular server. The lbxproxy accepts client
+connections, multiplexes them over a single connection to the X
+server, and performs various optimizations on the X protocol to make
+it faster over low bandwidth and/or high latency connections.
 
 %description -l pl.UTF-8
-Aplikacja lbxproxy.
+Aplikacje chcące wykorzystać rozszerzenie LBX (Low Bandwidth X - X dla
+sieci o małej przepustowości) muszą wykonywać połączenia do lbxproxy.
+Aplikacje te nie muszą wiedzieć niczego o LBX, po prostu łączą się z
+lbxproxy tak, jak ze zwykłym serwerem. lbxproxy przyjmuje połączenia
+klienckie, przekazuje je naprzemiennie po pojedynczym połączeniu do
+serwera X i wykonuje różne optymalizacje na protokole X w celu
+uczynienia go szybszym po połączeniu o niskiej przepustowości i/lub
+dużym opóźnieniu.
 
 %prep
 %setup -q -n lbxproxy-%{version}
