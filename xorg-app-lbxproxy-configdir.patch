@@ -1,17 +1,17 @@
---- lbxproxy-1.0.1/Makefile.am.orig	2005-12-06 23:48:16.000000000 +0100
-+++ lbxproxy-1.0.1/Makefile.am	2006-10-15 13:06:31.914907000 +0200
-@@ -21,8 +21,9 @@
+--- lbxproxy-1.0.2/Makefile.am.orig	2009-11-03 07:23:21.000000000 +0100
++++ lbxproxy-1.0.2/Makefile.am	2009-11-06 06:52:00.524440813 +0100
+@@ -23,8 +23,9 @@
  
- bin_PROGRAMS = lbxproxy
+ AM_CFLAGS = $(CWARNFLAGS)
  
 +configdir = $(libdir)/X11/lbxproxy
- lbxproxy_CFLAGS = $(LBXPROXY_CFLAGS) -I$(top_srcdir)/include	\
+ AM_CPPFLAGS = $(LBXPROXY_CFLAGS) $(OS_CFLAGS) -I$(top_srcdir)/include	\
 -	-DDEF_ATOMS_FILE=\"$(libdir)/X11/lbxproxy/AtomControl\" \
 +	-DDEF_ATOMS_FILE=\"$(configdir)/AtomControl\" \
  	-D_BSD_SOURCE -DLBXPROXY_t -DTRANS_SERVER
  
  lbxproxy_LDADD = $(LBXPROXY_LIBS)
-@@ -81,7 +82,6 @@
+@@ -83,7 +84,6 @@
  appman_PRE = \
          lbxproxy.man
  
