@@ -2,7 +2,7 @@ Summary:	lbxproxy application - Low Bandwidth X proxy
 Summary(pl.UTF-8):	Aplikacja lbxproxy - proxy X dla sieci o niskiej przepustowości
 Name:		xorg-app-lbxproxy
 Version:	1.0.2
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/lbxproxy-%{version}.tar.bz2
@@ -14,8 +14,8 @@ BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libICE-devel
-BuildRequires:	xorg-lib-libXext-devel
-BuildRequires:	xorg-lib-liblbxutil-devel
+BuildRequires:	xorg-lib-libXext-devel >= 1.1.1-3
+BuildRequires:	xorg-lib-liblbxutil-devel >= 1.1.0
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRequires:	xorg-proto-bigreqsproto-devel
 BuildRequires:	xorg-proto-xproxymanagementprotocol-devel
