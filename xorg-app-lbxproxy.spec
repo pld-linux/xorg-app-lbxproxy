@@ -9,7 +9,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/app/lbxproxy-%{version}
 # Source0-md5:	0bd565b5464f38f606dae15459ff4b09
 Source1:	lbxproxy.1x.pl
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libICE-devel
@@ -17,8 +17,9 @@ BuildRequires:	xorg-lib-libXext-devel >= 1.1.1-3
 BuildRequires:	xorg-lib-liblbxutil-devel >= 1.1.0
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRequires:	xorg-proto-bigreqsproto-devel
+BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xproxymanagementprotocol-devel
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
