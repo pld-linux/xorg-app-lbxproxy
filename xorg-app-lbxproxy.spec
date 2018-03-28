@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -D %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/pl/man1/lbxproxy.1x
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/pl/man1/lbxproxy.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -71,5 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/lbxproxy
 %dir /etc/X11/lbxproxy
 %config(noreplace) %verify(not md5 mtime size) /etc/X11/lbxproxy/AtomControl
-%{_mandir}/man1/lbxproxy.1x*
-%lang(pl) %{_mandir}/pl/man1/lbxproxy.1x*
+%{_mandir}/man1/lbxproxy.1*
+%lang(pl) %{_mandir}/pl/man1/lbxproxy.1*
